@@ -1,0 +1,890 @@
+[
+  {
+    "id": "demo-meridian-coldchain",
+    "isDemo": true,
+    "createdAt": "2026-11-12T09:15:00.000Z",
+    "updatedAt": "2026-11-15T14:30:00.000Z",
+    "status": "Complete",
+    "clarificationsSubmitted": true,
+    "intake": {
+      "businessName": "Meridian Cold-Chain Microhubs",
+      "businessDescription": "Shared temperature-controlled micro-fulfillment lockers and route-consolidation software for independent specialty food producers and local farms delivering into dense urban neighborhoods without owning refrigerated fleets.",
+      "industry": "Food Logistics & Supply Chain SaaS",
+      "targetGeography": "Pacific Northwest (Portland & Seattle metro corridors)",
+      "intendedCustomers": "Independent specialty food makers, regional dairies, and artisanal bakeries fulfilling 40–350 weekly wholesale and direct-to-consumer cold orders.",
+      "estimatedStartingBudget": "$85,000",
+      "businessStage": "Pre-Seed / Validation",
+      "mainObjective": "Validate unit economics with 12 paying anchor producers across 2 urban microhubs within 6 months."
+    },
+    "additionalClarificationNotes": [],
+    "ideaAnalysis": {
+      "analyzedAt": "2026-11-12T09:20:00.000Z",
+      "coreValueProposition": "Eliminates refrigerated fleet CapEx for small specialty producers by combining shared urban cold-storage microhubs with automated multi-vendor route consolidation.",
+      "suppliedFactsSummary": [
+        "Target launch corridor is Portland and Seattle metro areas.",
+        "Initial budget constraint is $85,000 at Pre-Seed / Validation stage.",
+        "Target customer volume is 40–350 weekly cold orders per producer.",
+        "6-month goal is 12 paying anchor producers across 2 microhubs.",
+        "Proposed pricing model: $350/month platform & cold-slot retainer plus $4.50 per consolidated tote delivered."
+      ],
+      "targetMarketAssumptions": [
+        {
+          "statement": "Independent food producers currently overpay for LTL refrigerated carriers or lose margin running half-empty personal vans.",
+          "basis": "hypothesis",
+          "rationale": "Standard industry friction for sub-pallet cold-chain shippers, though exact per-drop cost must be verified in discovery interviews."
+        },
+        {
+          "statement": "Dense urban neighborhoods contain underutilized commercial kitchen or retail back-of-house square footage suitable for sub-leasing cold lockers.",
+          "basis": "hypothesis",
+          "rationale": "Requires landlord/partner validation before committing hardware capital."
+        }
+      ],
+      "potentialCustomerProblems": [
+        {
+          "statement": "Temperature excursions during last-mile handoffs cause spoilage and retail chargebacks.",
+          "basis": "hypothesis"
+        },
+        {
+          "statement": "Minimum order thresholds on third-party cold distributors lock out emerging regional brands.",
+          "basis": "hypothesis"
+        }
+      ],
+      "missingInformation": [
+        "Binding per-stop and per-route rates from regional refrigerated courier contractors.",
+        "Exact monthly sub-lease rate per commissary walk-in bay in Portland and Seattle.",
+        "Food safety permit scope for multi-tenant cold staging at host commissaries."
+      ],
+      "clarificationQuestions": [
+        {
+          "id": "cq-1",
+          "category": "Operations",
+          "question": "Will Meridian employ its own last-mile drivers or partner with existing local courier fleets for hub-to-buyer delivery?",
+          "whyItMatters": "Determines fixed labor liability, commercial insurance needs, and how far $85,000 extends.",
+          "answer": "Partner with 2 regional refrigerated courier contractors for hub-to-store runs while producers drop off at the consolidated intake dock."
+        },
+        {
+          "id": "cq-2",
+          "category": "Economics",
+          "question": "What pricing model do you intend to test first with the 12 anchor producers?",
+          "whyItMatters": "Recurring base subscriptions stabilize cash flow compared to pure per-tote transactional pricing.",
+          "answer": "$350/month platform & cold-slot retainer plus $4.50 per consolidated tote delivered."
+        },
+        {
+          "id": "cq-3",
+          "category": "Compliance",
+          "question": "Do your target microhub spaces already hold food-grade cold storage permits, or will retrofitting be required?",
+          "whyItMatters": "Electrical upgrades and municipal food-facility permitting can delay launch by 8–16 weeks.",
+          "answer": "Targeting existing commissary kitchens with spare walk-in capacity to avoid new construction permits."
+        }
+      ],
+      "keyBusinessRisks": [
+        {
+          "statement": "Two-sided density risk: low producer volume per hub prevents profitable route consolidation.",
+          "basis": "hypothesis",
+          "rationale": "Route economics break down below critical tote density per ZIP code."
+        },
+        {
+          "statement": "Capital burn risk if custom locker hardware is purchased before locking in anchor retainers.",
+          "basis": "fact",
+          "rationale": "Budget of $85,000 leaves minimal buffer for hardware write-offs."
+        }
+      ]
+    },
+    "personas": {
+      "generatedAt": "2026-11-12T09:28:00.000Z",
+      "items": [
+        {
+          "id": "persona-1",
+          "personaName": "Elena Vance",
+          "roleOrArchetype": "Founder & Head of Production, Regional Specialty Creamery",
+          "demographics": {
+            "summary": "Operates a 6-person artisanal food business in the Portland metro area shipping 90–160 weekly cold orders.",
+            "basis": "hypothesis"
+          },
+          "goals": [
+            {
+              "text": "Expand wholesale placement into 15+ urban independent grocers without buying a second Sprinter van.",
+              "basis": "fact"
+            },
+            {
+              "text": "Keep cold-chain fulfillment costs predictable under 12% of wholesale order value.",
+              "basis": "hypothesis"
+            }
+          ],
+          "painPoints": [
+            {
+              "text": "Spends 10+ founder hours weekly coordinating ad-hoc urban deliveries.",
+              "basis": "hypothesis"
+            },
+            {
+              "text": "Rejected by national cold distributors due to low pallet volumes.",
+              "basis": "hypothesis"
+            }
+          ],
+          "purchasingMotivations": [
+            {
+              "text": "Transparent per-tote pricing ($4.50/tote) paired with reliable temperature logs.",
+              "basis": "fact"
+            },
+            {
+              "text": "Zero long-term fleet lease commitments.",
+              "basis": "hypothesis"
+            }
+          ],
+          "expectedBehavior": [
+            {
+              "text": "Evaluates new logistics partners through a 30-day single-route trial before migrating key accounts.",
+              "basis": "hypothesis"
+            },
+            {
+              "text": "Drops consolidated morning batches at a nearby commissary hub twice weekly.",
+              "basis": "fact"
+            }
+          ],
+          "customerNeeds": [
+            {
+              "text": "Automated proof-of-delivery and continuous temperature compliance alerts.",
+              "basis": "hypothesis"
+            },
+            {
+              "text": "Consistent morning delivery windows required by urban grocers.",
+              "basis": "hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "persona-2",
+          "personaName": "Marcus Chen",
+          "roleOrArchetype": "Operations Lead, Multi-Kitchen Bakery & Meal Brand",
+          "demographics": {
+            "summary": "Manages fulfillment for a fast-growing Seattle-based prepared foods brand handling 220–340 weekly orders.",
+            "basis": "hypothesis"
+          },
+          "goals": [
+            {
+              "text": "Consolidate Portland and Seattle urban drops into a single scheduling dashboard.",
+              "basis": "fact"
+            },
+            {
+              "text": "Reduce spoilage claims during warm summer months.",
+              "basis": "hypothesis"
+            }
+          ],
+          "painPoints": [
+            {
+              "text": "Fragmented local couriers lack standardized cold-chain tracking.",
+              "basis": "hypothesis"
+            },
+            {
+              "text": "Peak Thursday–Friday demand overwhelms internal dispatch capacity.",
+              "basis": "hypothesis"
+            }
+          ],
+          "purchasingMotivations": [
+            {
+              "text": "API or CSV order batching that replaces manual spreadsheet routing.",
+              "basis": "hypothesis"
+            },
+            {
+              "text": "Predictable $350/mo retainer with volume scalability.",
+              "basis": "fact"
+            }
+          ],
+          "expectedBehavior": [
+            {
+              "text": "Requires clear SLA commitments on missed delivery windows before onboarding wholesale accounts.",
+              "basis": "hypothesis"
+            },
+            {
+              "text": "Wants weekly consolidated invoicing across all urban drops.",
+              "basis": "hypothesis"
+            }
+          ],
+          "customerNeeds": [
+            {
+              "text": "Staging space for 15–25 insulated totes during early-morning dispatch.",
+              "basis": "hypothesis"
+            },
+            {
+              "text": "Exception alerting when courier pickup is delayed >15 minutes.",
+              "basis": "hypothesis"
+            }
+          ]
+        }
+      ]
+    },
+    "swot": {
+      "generatedAt": "2026-11-12T09:35:00.000Z",
+      "strengths": [
+        {
+          "id": "swot-s1",
+          "point": "Asset-light commissary sub-lease model preserves the $85,000 budget.",
+          "rationale": "Targeting existing commissary walk-ins avoids expensive refrigeration buildouts and lengthy health permitting.",
+          "basis": "fact",
+          "impact": "high"
+        },
+        {
+          "id": "swot-s2",
+          "point": "Hybrid retainer + per-tote pricing aligns fixed hub rent with variable volume.",
+          "rationale": "Twelve producers at $350/mo generate $4,200/mo baseline recurring revenue before tote margin.",
+          "basis": "fact",
+          "impact": "high"
+        }
+      ],
+      "weaknesses": [
+        {
+          "id": "swot-w1",
+          "point": "Reliance on third-party courier contractors reduces direct control over driver SLA quality.",
+          "rationale": "Contractor delays or improper tote handling directly impact Meridian brand trust.",
+          "basis": "fact",
+          "impact": "high"
+        },
+        {
+          "id": "swot-w2",
+          "point": "No proprietary historical routing data or existing urban density at launch.",
+          "rationale": "Early corridors may operate below break-even density until anchor cohorts fill.",
+          "basis": "hypothesis",
+          "impact": "medium"
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "swot-o1",
+          "point": "High concentration of independent specialty food brands in Portland and Seattle.",
+          "rationale": "Regional food culture supports strong demand for local farm-to-grocer distribution.",
+          "basis": "hypothesis",
+          "impact": "high"
+        },
+        {
+          "id": "swot-o2",
+          "point": "Software-enabled temperature compliance logs create high switching costs.",
+          "rationale": "Once grocers rely on automated cold-chain receipts, producers rarely revert to manual logs.",
+          "basis": "hypothesis",
+          "impact": "medium"
+        }
+      ],
+      "threats": [
+        {
+          "id": "swot-t1",
+          "point": "Commissary hosts could raise space rates or reclaim capacity during peak seasonal demand.",
+          "rationale": "Without multi-year space agreements, host dependency introduces operational fragility.",
+          "basis": "hypothesis",
+          "impact": "medium"
+        },
+        {
+          "id": "swot-t2",
+          "point": "Incumbent regional distributors could lower minimum order thresholds to defend accounts.",
+          "rationale": "Price compression on core routes would squeeze per-tote margins.",
+          "basis": "hypothesis",
+          "impact": "medium"
+        }
+      ]
+    },
+    "businessModel": {
+      "generatedAt": "2026-11-12T09:42:00.000Z",
+      "valueProposition": [
+        {
+          "id": "bm-vp1",
+          "text": "Shared urban cold-hub access with zero fleet CapEx",
+          "basis": "fact"
+        },
+        {
+          "id": "bm-vp2",
+          "text": "Automated multi-producer route consolidation & temperature logging",
+          "basis": "recommendation"
+        }
+      ],
+      "customerSegments": [
+        {
+          "id": "bm-cs1",
+          "text": "Specialty food & dairy producers (40–350 cold orders/week)",
+          "basis": "fact"
+        },
+        {
+          "id": "bm-cs2",
+          "text": "Regional artisanal bakeries expanding into urban grocers",
+          "basis": "hypothesis"
+        }
+      ],
+      "revenueStreams": [
+        {
+          "id": "bm-rs1",
+          "text": "$350/month platform & reserved cold-slot retainer (unvalidated proposed rate)",
+          "basis": "fact"
+        },
+        {
+          "id": "bm-rs2",
+          "text": "$4.50 per consolidated tote delivered (unvalidated proposed rate)",
+          "basis": "fact"
+        }
+      ],
+      "keyResources": [
+        {
+          "id": "bm-kr1",
+          "text": "Sub-leased commissary cold-storage bays in 2 launch corridors",
+          "basis": "fact"
+        },
+        {
+          "id": "bm-kr2",
+          "text": "Contracted refrigerated courier partnerships & Bluetooth temp sensors",
+          "basis": "recommendation"
+        }
+      ],
+      "keyActivities": [
+        {
+          "id": "bm-ka1",
+          "text": "Morning dock intake consolidation & route manifest generation",
+          "basis": "recommendation"
+        },
+        {
+          "id": "bm-ka2",
+          "text": "Courier SLA monitoring & producer onboarding",
+          "basis": "hypothesis"
+        }
+      ],
+      "costStructure": [
+        {
+          "id": "bm-co1",
+          "text": "Commissary walk-in bay leases & IoT temperature hardware",
+          "basis": "fact"
+        },
+        {
+          "id": "bm-co2",
+          "text": "Contracted refrigerated courier per-stop payouts & cargo insurance",
+          "basis": "hypothesis"
+        }
+      ],
+      "distributionChannels": [
+        {
+          "id": "bm-dc1",
+          "text": "Direct founder outreach via local commissary kitchens & farmers markets",
+          "basis": "recommendation"
+        },
+        {
+          "id": "bm-dc2",
+          "text": "Referral partnerships with independent urban grocery buyers",
+          "basis": "hypothesis"
+        }
+      ],
+      "customerRelationships": [
+        {
+          "id": "bm-cr1",
+          "text": "Dedicated 30-day pilot onboarding with route cost benchmarking",
+          "basis": "recommendation"
+        },
+        {
+          "id": "bm-cr2",
+          "text": "Self-serve dispatch portal with automated delivery & temp alerts",
+          "basis": "hypothesis"
+        }
+      ]
+    },
+    "financialFeasibility": {
+      "generatedAt": "2026-11-12T09:46:00.000Z",
+      "sufficiencyAssessment": {
+        "status": "partial",
+        "summary": "Starting budget ($85,000) and proposed pricing ($350/mo retainer + $4.50/tote) are supplied, but binding courier per-stop quotes and commissary sub-lease rents are unknown. Unit margin and break-even volume cannot be finalized without vendor quotes.",
+        "missingFinancialInputs": [
+          "Contracted refrigerated courier fee per route wave and per store stop.",
+          "Monthly commissary walk-in bay sub-lease rates in Portland and Seattle.",
+          "Cargo/spoilage commercial liability insurance premium.",
+          "Average totes per consolidated store drop."
+        ]
+      },
+      "initialCapitalAllocation": [
+        {
+          "id": "cap-1",
+          "item": "Total Available Starting Budget Envelope",
+          "amount": "$85,000",
+          "cadenceOrUnit": "Total Pre-Seed Cap",
+          "basis": "fact",
+          "rationale": "Explicitly provided in venture intake."
+        },
+        {
+          "id": "cap-2",
+          "item": "Insulated Totes, Phase-Change Packs & Bluetooth Temp Loggers (2 hubs)",
+          "amount": "$10,000–$14,000",
+          "cadenceOrUnit": "One-Time Setup",
+          "basis": "estimate",
+          "rationale": "Planning allowance for reusable cold packaging; requires supplier quote."
+        },
+        {
+          "id": "cap-3",
+          "item": "Routing & Compliance Logging MVP Software Build",
+          "amount": "$12,000–$18,000",
+          "cadenceOrUnit": "One-Time Build",
+          "basis": "estimate",
+          "rationale": "Lightweight dispatch manifest and temperature logging portal."
+        },
+        {
+          "id": "cap-4",
+          "item": "Commissary Security Deposits & Initial Legal/Insurance Setup",
+          "amount": "Unknown (Target <= $15,000)",
+          "cadenceOrUnit": "One-Time Setup",
+          "basis": "unknown",
+          "rationale": "Exact landlord deposit and cargo policy binder terms not yet quoted."
+        }
+      ],
+      "fixedCosts": [
+        {
+          "id": "fc-1",
+          "item": "Commissary Cold-Storage Sub-Leases (Portland + Seattle)",
+          "amount": "Unknown (Requires host quote)",
+          "cadenceOrUnit": "Monthly (2 bays)",
+          "basis": "unknown",
+          "rationale": "Depends on host kitchen square-footage and morning dock access fees."
+        },
+        {
+          "id": "fc-2",
+          "item": "Commercial Cold-Chain & Cargo Liability Insurance",
+          "amount": "Unknown (Requires broker quote)",
+          "cadenceOrUnit": "Monthly",
+          "basis": "unknown",
+          "rationale": "Rates vary significantly based on perishable value caps."
+        },
+        {
+          "id": "fc-3",
+          "item": "Cloud Hosting, Telemetry Subscriptions & Admin Overhead",
+          "amount": "$400–$700",
+          "cadenceOrUnit": "Monthly",
+          "basis": "estimate",
+          "rationale": "Baseline software infrastructure and sensor cellular/BLE gateway fees."
+        }
+      ],
+      "variableCosts": [
+        {
+          "id": "vc-1",
+          "item": "Contracted Refrigerated Courier Payouts (Hub-to-Store)",
+          "amount": "Unknown (Unquoted)",
+          "cadenceOrUnit": "Per route wave / per tote",
+          "basis": "unknown",
+          "rationale": "Must be negotiated under $3.35/tote effective cost to preserve >=25% gross margin on $4.50/tote."
+        },
+        {
+          "id": "vc-2",
+          "item": "Payment Processing & Tote Sanitization Consumables",
+          "amount": "$0.25–$0.40",
+          "cadenceOrUnit": "Per tote delivered",
+          "basis": "estimate",
+          "rationale": "Estimated billing fees (~2.9%) and food-safe liner/sanitizing supplies."
+        }
+      ],
+      "workingCapitalRequirements": {
+        "summary": "At least 4–5 months of operating runway must remain liquid after setup deposits to absorb low early tote density before 12 anchor producers reach steady-state volume.",
+        "estimatedBuffer": "$40,000–$48,000 reserved from the $85,000 budget",
+        "basis": "estimate",
+        "assumptions": [
+          "Assumes setup CapEx + deposits remain below $40,000 total.",
+          "Assumes producers pay retainers monthly in advance while couriers bill net-15 or weekly."
+        ]
+      },
+      "revenueModel": {
+        "description": "Hybrid recurring subscription + transactional consolidation fee: $350/month platform & cold-slot retainer per producer plus $4.50 per consolidated tote delivered.",
+        "preservedProposedRates": [
+          "$350/month platform & cold-slot retainer (user-proposed, unvalidated)",
+          "$4.50 per consolidated tote delivered (user-proposed, unvalidated)"
+        ],
+        "basis": "fact"
+      },
+      "revenuePerTransaction": {
+        "valueOrFormula": "$4.50/tote transactional fee + amortized $350/mo retainer ($350 / monthly totes per producer)",
+        "basis": "fact",
+        "rationale": "At 12 producers (40–350 weekly orders), exact blended revenue per tote depends on average totes/order and producer churn."
+      },
+      "contributionMargin": {
+        "valueOrFormula": "Unknown — requires contracted courier per-tote cost quote",
+        "basis": "unknown",
+        "rationale": "Cannot compute reliable contribution margin until regional courier quotes determine hub-to-store delivery cost per tote."
+      },
+      "breakEvenAnalysis": {
+        "summary": "Break-even tote and producer count cannot be reliably calculated until commissary lease and courier route rates are quoted.",
+        "breakEvenThreshold": "Unknown (pending courier & commissary quotes)",
+        "basis": "unknown",
+        "requiredInputsToCalculate": [
+          "Monthly fixed commissary lease rate per microhub",
+          "Contracted courier cost per stop / per consolidated tote",
+          "Average number of totes per retail drop-off"
+        ]
+      },
+      "scenarioAnalysis": [
+        {
+          "scenarioName": "Conservative",
+          "assumptions": [
+            "6 paying producers onboarded by Month 4 across 1 active hub (Portland)",
+            "Producers ship near lower range (~50 totes/week each = ~1,200 totes/month)"
+          ],
+          "projectedOutcome": "~$2,100/mo retainer revenue + ~$5,400/mo tote fees ($7,500 gross monthly billings); net cash burn depends on unquoted courier payout.",
+          "basis": "estimate",
+          "feasibilityNote": "Pauses Seattle Microhub #2 expansion until Portland achieves positive route-level margin."
+        },
+        {
+          "scenarioName": "Base",
+          "assumptions": [
+            "12 anchor producers active by Month 6 across 2 hubs (meets stated 6-month target)",
+            "Average 100 totes/week per producer (~4,800 totes/month total)"
+          ],
+          "projectedOutcome": "$4,200/mo retainer revenue + $21,600/mo tote fees ($25,800 gross monthly billings before courier payouts).",
+          "basis": "estimate",
+          "feasibilityNote": "Viable within $85,000 budget only if courier payout averages <= $3.25/tote and hub rent stays modest."
+        },
+        {
+          "scenarioName": "Upside",
+          "assumptions": [
+            "16 producers across 2 hubs with high drop density (>6,500 totes/month)",
+            "Tiered volume discounts negotiated with courier contractors"
+          ],
+          "projectedOutcome": "$5,600/mo retainer revenue + $29,250+/mo tote fees; supports self-funded third corridor planning.",
+          "basis": "estimate",
+          "feasibilityNote": "Requires >=97% on-time cold compliance and tight route clustering to achieve courier volume tiers."
+        }
+      ]
+    },
+    "manualCompetitors": [
+      {
+        "id": "comp-1",
+        "name": "Regional LTL Cold Freight Carriers (User Observation)",
+        "offeringSummary": "Pallet-based refrigerated freight across Pacific Northwest corridors.",
+        "pricingModel": "Minimum pallet rates + fuel surcharge",
+        "perceivedStrengths": "Established interstate cold fleet and warehouse network.",
+        "perceivedWeaknesses": "High minimum order thresholds unsuitable for 40–150 tote weekly producers."
+      },
+      {
+        "id": "comp-2",
+        "name": "Producer Self-Delivery Vans (Status Quo)",
+        "offeringSummary": "Founders or staff driving personal insulated vans to urban retail accounts.",
+        "pricingModel": "Internal labor, fuel, vehicle depreciation",
+        "perceivedStrengths": "Full control over customer relationship at store drop-off.",
+        "perceivedWeaknesses": "High founder time drain and underutilized vehicle capacity."
+      }
+    ],
+    "competitivePositioning": {
+      "generatedAt": "2026-11-12T09:50:00.000Z",
+      "competitorsAnalyzedCount": 2,
+      "verifiedExternalResearchConducted": false,
+      "dataSourceNotice": "No external competitor research or live pricing audits were retrieved. Analysis is based strictly on the 2 manually entered competitor/alternative profiles plus AI-generated strategic hypotheses.",
+      "positioningStatement": "For Pacific Northwest specialty food producers shipping sub-pallet volumes, Meridian bridges the gap between expensive pallet freight and exhausting founder self-delivery through shared commissary microhubs and per-tote route consolidation.",
+      "differentiationOpportunities": [
+        {
+          "statement": "Sub-pallet tote granularity priced at $4.50/tote unlocks accounts too small for LTL freight.",
+          "sourceType": "user_supplied",
+          "basis": "fact",
+          "rationale": "Directly addresses the minimum-threshold gap noted in user-supplied competitor observations."
+        },
+        {
+          "statement": "Shared morning consolidation may save producers 8–12 hours/week of self-driving overhead.",
+          "sourceType": "ai_hypothesis",
+          "basis": "hypothesis"
+        }
+      ],
+      "potentialAdvantages": [
+        {
+          "statement": "Minimal fixed asset burden compared to traditional cold-freight warehouse operators.",
+          "sourceType": "user_supplied",
+          "basis": "fact"
+        }
+      ],
+      "potentialWeaknesses": [
+        {
+          "statement": "Less personal face-time between producer founders and store receivers than self-delivery.",
+          "sourceType": "ai_hypothesis",
+          "basis": "hypothesis"
+        }
+      ],
+      "competitiveRisks": [
+        {
+          "statement": "Courier partners could attempt to disintermediate Meridian once producer routes are established.",
+          "sourceType": "ai_hypothesis",
+          "basis": "hypothesis",
+          "rationale": "Requires strong non-solicitation terms and software lock-in via compliance reporting."
+        }
+      ]
+    },
+    "roadmap": {
+      "generatedAt": "2026-11-12T10:00:00.000Z",
+      "phases": [
+        {
+          "phaseKey": "initial_validation",
+          "phaseTitle": "Initial Validation",
+          "timeframe": "Weeks 1–4",
+          "entryConditions": [
+            "Project intake facts and $85,000 capital ceiling confirmed."
+          ],
+          "conditionalTriggers": [
+            {
+              "condition": "Courier per-tote quote allows positive contribution margin at $4.50/tote AND >= 6 anchor producer LOIs signed",
+              "targetMilestone": "Unlock Microhub #1 (Portland) commissary sub-lease deposit",
+              "metricThreshold": ">= 6 pilot LOIs + courier rate <= $3.35/tote"
+            }
+          ],
+          "objectives": [
+            "Validate willingness to pay $350/mo + $4.50/tote with 15 target producers.",
+            "Secure conditional LOIs from 2 commissary hosts in Portland and Seattle."
+          ],
+          "activities": [
+            "Conduct 15 structured discovery interviews tracking current weekly van/freight spend.",
+            "Audit 4 candidate commissary kitchens for morning dock access and walk-in capacity."
+          ],
+          "deliverables": [
+            "Signed pilot letters of intent from at least 6 anchor producers.",
+            "Draft courier SLA & liability agreement with 2 local cold couriers."
+          ],
+          "dependencies": [
+            "Completion of target producer contact list and sample tote cost calculator."
+          ],
+          "successIndicators": [
+            "Target >= 6 signed pilot LOIs before committing hub lease deposits.",
+            "Verified courier per-stop quote allowing >= 25% gross margin per tote."
+          ]
+        },
+        {
+          "phaseKey": "planning_preparation",
+          "phaseTitle": "Planning & Preparation",
+          "timeframe": "Weeks 5–8",
+          "entryConditions": [
+            "At least 6 conditional producer LOIs signed in Portland.",
+            "Binding courier pricing schedule and host commissary permit scope verified."
+          ],
+          "conditionalTriggers": [
+            {
+              "condition": "5 consecutive simulated dry-run cold routes pass telemetry compliance within budget",
+              "targetMilestone": "Approve live paid producer deliveries at Microhub #1",
+              "metricThreshold": "100% pass rate on 5 dry runs; setup spend <= $34,000 (40% of budget)"
+            }
+          ],
+          "objectives": [
+            "Operationalize Microhub #1 (Portland) within $34,000 initial deployment ceiling.",
+            "Launch lightweight order-intake and temperature-logging MVP."
+          ],
+          "activities": [
+            "Execute 6-month flexible sub-lease with Portland commissary host.",
+            "Deploy Bluetooth temperature loggers and standardized insulated totes."
+          ],
+          "deliverables": [
+            "Live dispatch manifest & temp-alert portal.",
+            "Standard operating procedures for dock handoff and excursion escalation."
+          ],
+          "dependencies": [
+            "Signed commissary lease and finalized cargo insurance binder."
+          ],
+          "successIndicators": [
+            "100% pass rate on 5 simulated dry-run cold route tests.",
+            "Hub setup spend kept under 40% of total $85,000 budget."
+          ]
+        },
+        {
+          "phaseKey": "launch",
+          "phaseTitle": "Launch",
+          "timeframe": "Weeks 9–16",
+          "entryConditions": [
+            "Portland dry-run cold telemetry audit passed.",
+            "Cargo liability binder and contracted courier SLAs active."
+          ],
+          "conditionalTriggers": [
+            {
+              "condition": "Portland Microhub #1 achieves reliable deliveries AND positive route contribution margin for 4 consecutive weeks",
+              "targetMilestone": "Trigger Seattle Microhub #2 commissary lease & launch",
+              "metricThreshold": ">= 97% on-time cold SLA + positive contribution margin across 4 weeks"
+            }
+          ],
+          "objectives": [
+            "Go live with 6–8 paying producers in Portland before replicating in Seattle Microhub #2.",
+            "Prove reliable on-time, within-temperature delivery performance."
+          ],
+          "activities": [
+            "Run twice-weekly consolidated delivery waves and collect weekly producer feedback.",
+            "Replicate commissary onboarding playbook in Seattle metro corridor only after Portland gate passes."
+          ],
+          "deliverables": [
+            "Weekly unit economics scorecard (revenue per tote vs. courier payout).",
+            "Portland launch performance dossier gating Seattle opening."
+          ],
+          "dependencies": [
+            "Portland cohort achieving stable weekly tote volume before Seattle expansion."
+          ],
+          "successIndicators": [
+            ">= 97% on-time delivery within 2–6°C compliance threshold.",
+            "Positive contribution margin per consolidated route wave by Week 14."
+          ]
+        },
+        {
+          "phaseKey": "growth",
+          "phaseTitle": "Growth",
+          "timeframe": "Months 5–6",
+          "entryConditions": [
+            "At least one hub operating at positive contribution margin with <2% spoilage/excursion rate."
+          ],
+          "conditionalTriggers": [
+            {
+              "condition": "12+ active paying producers sustained for 60 days with <= 1 account churn",
+              "targetMilestone": "Prepare Seed expansion / 3rd corridor unit economics dossier",
+              "metricThreshold": "12+ paying producers (>= $4,200/mo retainers) & <= 8% quarterly churn"
+            }
+          ],
+          "objectives": [
+            "Reach 12+ paying anchor producers across both hubs to satisfy 6-month objective.",
+            "Increase route density per ZIP code to reduce per-stop courier cost."
+          ],
+          "activities": [
+            "Launch grocer-referred producer onboarding campaign.",
+            "Negotiate tiered volume discounts with contracted cold couriers."
+          ],
+          "deliverables": [
+            "6-month unit economics dossier ready for seed fundraising or self-funded expansion.",
+            "Standardized hub-in-a-box launch checklist."
+          ],
+          "dependencies": [
+            "Sustained <2% spoilage/excursion rate during Launch phase."
+          ],
+          "successIndicators": [
+            "12+ active paying producers generating >= $4,200/mo in base retainers.",
+            "Net producer churn <= 1 account over 90 days."
+          ]
+        }
+      ]
+    },
+    "consistencyValidation": {
+      "validatedAt": "2026-11-15T14:30:00.000Z",
+      "overallStatus": "warnings_detected",
+      "summary": "Strategy modules align on the $85,000 budget, commissary sub-lease model, and $350/mo + $4.50/tote pricing, but two operational and unit-economics warnings require live vendor quotes before lease commitment.",
+      "checks": [
+        {
+          "id": "chk-1",
+          "category": "revenue_model",
+          "severity": "aligned",
+          "title": "Hybrid $350/mo + $4.50/tote pricing preserved consistently",
+          "description": "Intake clarifications, Business Model, Financial Feasibility, and Roadmap all preserve the exact user-proposed $350/mo retainer and $4.50/tote rate as an unvalidated hypothesis.",
+          "affectedModules": [
+            "Idea Analysis",
+            "Business Model",
+            "Financial Feasibility",
+            "Roadmap"
+          ],
+          "resolutionGuidance": "Test willingness to pay across 15 discovery interviews in Phase 1."
+        },
+        {
+          "id": "chk-2",
+          "category": "budget",
+          "severity": "warning",
+          "title": "Two-hub parallel launch may strain $85,000 budget without vendor quotes",
+          "description": "Opening both Portland and Seattle within 6 months requires tight setup cost caps (<$40k) while courier payouts and host leases remain unquoted.",
+          "affectedModules": [
+            "Financial Feasibility",
+            "Roadmap"
+          ],
+          "resolutionGuidance": "Enforce the Phase 3 conditional trigger: open Seattle Microhub #2 only after Portland hits positive route contribution margin."
+        },
+        {
+          "id": "chk-3",
+          "category": "customer_priority",
+          "severity": "aligned",
+          "title": "B2B specialty food producer segment remains primary across all modules",
+          "description": "Personas, SWOT, and Business Model consistently focus on independent producers shipping 40–350 weekly cold orders.",
+          "affectedModules": [
+            "Personas",
+            "SWOT",
+            "Business Model"
+          ],
+          "resolutionGuidance": "Maintain strict focus on wholesale/specialty food producers for the 12-anchor target."
+        },
+        {
+          "id": "chk-4",
+          "category": "timeline",
+          "severity": "aligned",
+          "title": "6-month validation timeline matches 4-phase roadmap gates",
+          "description": "Roadmap milestones span Weeks 1–16 and Months 5–6 with explicit validation gates ahead of major lease commitments.",
+          "affectedModules": [
+            "Idea Analysis",
+            "Roadmap"
+          ],
+          "resolutionGuidance": "Review Week 4 LOI count before signing Portland commissary sub-lease."
+        },
+        {
+          "id": "chk-5",
+          "category": "operational_assumption",
+          "severity": "warning",
+          "title": "Contracted courier SLA and host permit scope unverified",
+          "description": "Relying on external couriers and existing commissary walk-ins preserves capital but leaves delivery quality and multi-tenant permitting unconfirmed.",
+          "affectedModules": [
+            "SWOT",
+            "Financial Feasibility",
+            "Competitive Positioning"
+          ],
+          "resolutionGuidance": "Obtain written courier SLA quotes and verify commissary food-facility permit scope in Weeks 1–4."
+        }
+      ]
+    },
+    "executiveReport": {
+      "generatedAt": "2026-11-15T14:30:00.000Z",
+      "strategicThesis": "Meridian Cold-Chain Microhubs can unlock profitable sub-pallet urban cold distribution in the Pacific Northwest by pairing asset-light commissary sub-leases with contracted couriers and an unvalidated $350/mo + $4.50/tote consolidation model.",
+      "executiveSummary": "Meridian addresses a clear operational gap for independent specialty food producers shipping 40–350 weekly cold orders across Portland and Seattle. By leveraging existing commissary walk-in infrastructure rather than building new cold facilities, the venture aligns realistically with its $85,000 Pre-Seed budget.\n\nThe core strategic priority over the next 6 months is proving route-level contribution margin and reliable cold-chain compliance across 12 paying anchor producers. Securing anchor producer Letters of Intent and locking in contracted courier SLAs prior to signing hub sub-leases—and gating Seattle expansion on Portland profitability—will mitigate the primary two-sided density and capital burn risks.",
+      "criticalRisksAndAssumptions": [
+        {
+          "statement": "Proposed $4.50/tote fee plus $350/mo retainer yields positive margin after contracted courier payouts.",
+          "basis": "hypothesis",
+          "rationale": "Must be stress-tested against live courier route quotes in Weeks 1–4."
+        },
+        {
+          "statement": "Two-sided hub density threshold requires at least 6 active producers per microhub.",
+          "basis": "hypothesis"
+        },
+        {
+          "statement": "Commissary sub-leasing avoids new food-facility permitting delays.",
+          "basis": "fact",
+          "rationale": "Requires verification of host permit scope for multi-tenant staging."
+        }
+      ],
+      "recommendedNextSteps": [
+        {
+          "action": "Obtain binding per-stop route quotes from 3 regional refrigerated couriers in Portland and Seattle.",
+          "priority": "Immediate",
+          "ownerFocus": "Operations & Unit Economics"
+        },
+        {
+          "action": "Close 6 conditional producer pilot LOIs at the $350/mo + $4.50/tote price point.",
+          "priority": "Immediate",
+          "ownerFocus": "Founder-Led Sales"
+        },
+        {
+          "action": "Finalize commissary host agreement with clear morning dock windows and liability coverage.",
+          "priority": "Near-Term",
+          "ownerFocus": "Partnerships & Compliance"
+        },
+        {
+          "action": "Execute 5 dry-run cold-chain validation routes with Bluetooth loggers prior to paid launch.",
+          "priority": "Medium-Term",
+          "ownerFocus": "Quality & Launch Readiness"
+        }
+      ],
+      "transparencyLedger": {
+        "confirmedInputs": [
+          "Target geography: Pacific Northwest (Portland & Seattle metro corridors).",
+          "Starting budget cap: $85,000 at Pre-Seed / Validation stage.",
+          "Target customer profile: Independent specialty food producers shipping 40–350 weekly cold orders.",
+          "Operating model: Partner with 2 regional refrigerated courier contractors; sub-lease spare commissary walk-in capacity.",
+          "6-month objective: 12 paying anchor producers across 2 urban microhubs."
+        ],
+        "unvalidatedAssumptions": [
+          "Proposed pricing of $350/month platform retainer + $4.50 per consolidated tote delivered yields >= 25% gross margin.",
+          "Producers experience 8–12 hours/week of delivery overhead and will adopt shared morning dock drop-offs.",
+          "Existing commissary host food permits cover multi-tenant third-party staging without retrofits."
+        ],
+        "recommendations": [
+          "Gate Seattle Microhub #2 capital commitment behind 4 consecutive weeks of positive contribution margin in Portland.",
+          "Reserve $40,000–$48,000 of the $85,000 budget as operating runway until courier quotes and LOIs are signed.",
+          "Require non-solicitation clauses and automated compliance reporting to reduce courier disintermediation risk."
+        ],
+        "missingInformation": [
+          "Binding per-stop and per-route rates from regional refrigerated courier contractors.",
+          "Monthly commissary sub-lease fees and deposit terms in Portland and Seattle.",
+          "Commercial cargo and perishable spoilage insurance premiums.",
+          "Verified average totes per consolidated retail drop."
+        ],
+        "decisionsRequiringHumanValidation": [
+          "Confirm maximum acceptable courier payout per tote before committing to the $4.50/tote customer price.",
+          "Verify municipal health department stance on multi-tenant cold staging in host commissary kitchens.",
+          "Approve go/no-go threshold of 6 signed producer LOIs in Portland before signing the first lease."
+        ]
+      }
+    }
+  }
+]
